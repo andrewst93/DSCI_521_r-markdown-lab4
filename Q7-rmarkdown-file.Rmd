@@ -2,7 +2,7 @@
 title: "Q7-rmarkdown-file"
 author: "Ty Andrews"
 date: "2022-09-26"
-output: html_document
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
