@@ -1,0 +1,80 @@
+---
+title: "Q10-simple-quarto-presentation"
+author: "Ty Andrews"
+format:
+  revealjs: 
+    theme: simple
+editor: visual
+---
+
+## This is my first Quarto presentation!
+
+Here's how Quarto is described by RStudio
+
+"Quarto® is an open-source scientific and technical publishing system built on Pandoc
+
+-   Create dynamic content and author documents as plain text markdown or Jupyter notebooks.
+
+-   Publish high-quality articles, reports, presentations, websites, blogs, and more.
+
+-   Author with scientific markdown, including equations, citations, crossrefs, etc."
+
+[Source: Quarto.org](https://quarto.org/)
+
+## Quarto RevealJS Themes
+
+Quarto & RevealJS combine to provide a number of themes: 
+
+- beige, blood, dark, default, league, moon, night, serif, simple, sky, solarized
+
+This theme is **simple**.
+
+To set the theme put the theme name in the header as such:
+
+```
+format:
+  revealjs: 
+    theme: simple
+```
+
+## Plotting in slides
+
+Using a plot generated with ggplot2 from DSCI 551 Lab 3, here is the probability density function given that a professors lectures ended **no more than 1 minute over time.**
+
+```{r, echo=FALSE}
+library(ggplot2)
+
+lecture_time = c(0,1,1,2)
+prob_dens_function = c(0,2,0 , 0)
+
+df = data.frame(x = lecture_time, f_x = prob_dens_function)
+
+ggplot(data=df, aes(x=lecture_time, y=prob_dens_function, group = 1)) + 
+  geom_line() +
+  ggtitle("PDF of Lecture End Time Given X <= 1")
+```
+
+
+## Code in Presentations
+
+To show code you can either have it execute or not, you can also highlight specific lines of code like below.
+
+First line:
+```{r}
+#| echo: TRUE
+#| eval: FALSE
+#| code-line-numbers: "1"
+x <- 1:10
+x
+LETTERS[x]
+```
+Second & third line:
+```{r}
+#| echo: TRUE
+#| eval: FALSE
+#| code-line-numbers: "2,3"
+x <- 1:10
+x
+LETTERS[x]
+```
+[Inspiration](https://www.pipinghotdata.com/posts/2022-05-12-code-line-highlighting-in-quarto-revealjs-presentations/)

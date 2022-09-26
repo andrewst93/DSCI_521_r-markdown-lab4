@@ -252,7 +252,11 @@ to the GitHub repository for this lab
 and paste the two links below this question.
 ```
 
-YOUR ANSWER GOES HERE
+Q7.1:
+<https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_andrews9/blob/master/Q7-rmarkdown-file.html>
+
+Q7.2:
+<https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_andrews9/blob/master/Q7-rmarkdown-file.pdf>
 
 ```{block, type="alert alert-info"}
 #### Question 8
@@ -271,7 +275,8 @@ rubric={mechanics:6}
    Paste a link to these files as your answer below.
 ```
 
-YOUR ANSWER GOES HERE
+Q8 MD html file:
+<https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_andrews9/blob/master/Q8-new-rmarkdown-file.html>
 
 ```{block, type="alert alert-info"}
 #### Question 9 (Optional)
@@ -285,7 +290,12 @@ rubric={mechanics:1,reasoning:1}
    What do you see? How is it rendered?
 ```
 
-YOUR ANSWER GOES HERE
+The guthub_document markdown file displays in visual form instead of raw
+text like the Rmd files. This i nice to have finalized analysis/reports
+accessible to team without having to download/view and open.
+
+Link to github_document:
+<https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_andrews9/blob/master/Q8-new-rmarkdown-file.md>
 
 ```{block, type="alert alert-info"}
 #### Question 10

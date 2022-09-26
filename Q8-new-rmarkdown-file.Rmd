@@ -2,9 +2,7 @@
 title: "Q8-new-rmarkdown-file"
 author: "Ty Andrews"
 date: "2022-09-26"
-output:
-  html_document:
-    df_print: paged
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
